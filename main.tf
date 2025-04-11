@@ -24,3 +24,11 @@ resource "aws_s3_bucket" "mi_bucket" {
 resource "aws_s3_bucket" "example" {
   bucket = "mi-bucket-v1"
 }
+
+resource "aws_s3_bucket" "example_versioned" {
+  bucket        = "mi-bucket-v1-1"
+  versioning {
+    enabled = true
+  }
+}
+
