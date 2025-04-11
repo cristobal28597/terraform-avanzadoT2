@@ -20,3 +20,7 @@ resource "aws_s3_bucket" "mi_bucket" {
     Proyecto = "CI/CD con LocalStack"
   }
 }
+
+resource "aws_s3_bucket" "example" {
+  bucket = "mi-bucket-v1"
+}
